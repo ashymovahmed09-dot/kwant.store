@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>КВАНТ — техника нового поколения</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== ШАПКА ===== -->
+<header class="header">
+  <div class="header__inner">
+
+    <a href="index.html" class="logo">
+      <span class="logo__mark">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+          <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+          <path d="M8 3v18M16 3v18M3 8h18M3 16h18"></path>
+        </svg>
+      </span>
+      <span class="logo__text">КВАНТ</span>
+    </a>
+
+    <form class="search" id="searchForm">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"></circle>
+        <path d="M21 21l-4.3-4.3"></path>
+      </svg>
+      <input type="text" id="searchInput" placeholder="Найти смартфон, ноутбук, аксессуар…">
+    </form>
+
+    <nav class="nav">
+      <a href="catalog.html">Каталог</a>
+      <a href="sale.html">Акции</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <button class="cart-btn" id="cartBtn" aria-label="Открыть корзину">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="9" cy="20" r="1.4"></circle>
+        <circle cx="18" cy="20" r="1.4"></circle>
+        <path d="M2.5 3h2.6l2.2 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21.5 7H6"></path>
+      </svg>
+      <span class="cart-btn__count" id="cartCount">0</span>
+    </button>
+
+    <button class="burger" id="burgerBtn" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav nav--mobile" id="mobileNav">
+    <a href="catalog.html">Каталог</a>
+    <a href="sale.html">Акции</a>
+    <a href="about.html">О нас</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+</header>
+
+<!-- ===== ГЕРОЙ-БАННЕР ===== -->
+<section class="hero">
+  <div class="hero__grid">
+    <div class="hero__text">
+      <span class="hero__tag">Новая линейка · осень 2026</span>
+      <h1 class="hero__title">Техника,<br>собранная для скорости.</h1>
+      <p class="hero__desc">
+        Смартфоны, ноутбуки и аксессуары с честными характеристиками.
+        Без переплаты за коробку — только то, что влияет на работу устройства.
+      </p>
+      <div class="hero__actions">
+        <a href="catalog.html" class="btn btn--primary">Смотреть каталог</a>
+        <div class="hero__stat">
+          <strong>18 500+</strong>
+          <span>устройств продано в этом году</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="device device--phone">
+        <div class="device__notch"></div>
+        <div class="device__screen">
+          <span class="pulse-line"></span>
+          <span class="pulse-line pulse-line--short"></span>
+        </div>
+      </div>
+      <div class="device device--laptop">
+        <div class="device__lid"></div>
+        <div class="device__base"></div>
+      </div>
+      <div class="device device--buds">
+        <span></span><span></span>
+      </div>
+      <div class="grid-overlay"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ХИТЫ ПРОДАЖ ===== -->
+<section class="featured">
+  <div class="featured__head">
+    <div>
+      <span class="section-label">Подборка</span>
+      <h2 class="section-title">Хиты продаж</h2>
+    </div>
+    <a href="catalog.html" class="btn btn--primary">Весь каталог</a>
+  </div>
+
+  <div class="products-grid" id="featuredGrid">
+    <!-- Карточки генерируются в home.js -->
+  </div>
+</section>
+
+<!-- ===== О НАС (кратко) ===== -->
+<section class="about">
+  <div class="about__inner">
+    <div>
+      <span class="section-label">О нас</span>
+      <h2 class="section-title">Магазин, который тестирует то, что продаёт</h2>
+      <p>
+        КВАНТ работает с 2018 года. Каждое устройство проходит проверку в нашей
+        лаборатории перед тем, как попасть на витрину — без маркетинговых
+        преувеличений в описаниях.
+      </p>
+      <p style="margin-top: 18px;">
+        <a href="about.html" class="btn btn--primary">Подробнее о нас</a>
+      </p>
+    </div>
+    <div class="about__facts">
+      <div class="fact"><strong>7 лет</strong><span>на рынке электроники</span></div>
+      <div class="fact"><strong>34</strong><span>города с пунктами выдачи</span></div>
+      <div class="fact"><strong>2 года</strong><span>гарантии на всю технику</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ФУТЕР ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+
+    <div class="footer__col footer__col--brand">
+      <a href="index.html" class="logo">
+        <span class="logo__mark">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+            <path d="M8 3v18M16 3v18M3 8h18M3 16h18"></path>
+          </svg>
+        </span>
+        <span class="logo__text">КВАНТ</span>
+      </a>
+      <p>Техника нового поколения — на витрине и в жизни.</p>
+    </div>
+
+    <div class="footer__col">
+      <h3>Контакты</h3>
+      <ul>
+        <li>г. Москва, ул. Электронная, 12</li>
+        <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+        <li><a href="mailto:hello@kvant-store.ru">hello@kvant-store.ru</a></li>
+        <li>Ежедневно, 9:00 – 21:00</li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3>Покупателям</h3>
+      <ul>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="sale.html">Акции</a></li>
+        <li><a href="contacts.html">Доставка и оплата</a></li>
+        <li><a href="contacts.html">Гарантия и возврат</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3>Мы в соцсетях</h3>
+      <div class="socials">
+        <a href="#" aria-label="Telegram">TG</a>
+        <a href="#" aria-label="VKontakte">VK</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span>© 2026 КВАНТ. Все права защищены.</span>
+    <span>Цены на сайте носят демонстрационный характер.</span>
+  </div>
+</footer>
+
+<!-- ===== БОКОВАЯ ПАНЕЛЬ КОРЗИНЫ ===== -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-panel" id="cartPanel" aria-hidden="true">
+  <div class="cart-panel__head">
+    <h2>Корзина</h2>
+    <button class="cart-panel__close" id="cartCloseBtn" aria-label="Закрыть корзину">&times;</button>
+  </div>
+
+  <div class="cart-panel__body" id="cartItems">
+    <!-- Товары корзины генерируются в common.js -->
+  </div>
+
+  <div class="cart-panel__footer">
+    <div class="cart-panel__total">
+      <span>Итого</span>
+      <strong id="cartTotal">0 ₽</strong>
+    </div>
+    <button class="btn btn--primary btn--full" id="checkoutBtn">Оформить заказ</button>
+  </div>
+</aside>
+
+<script src="products-data.js"></script>
+<script src="common.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
